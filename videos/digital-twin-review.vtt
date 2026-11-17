@@ -1,0 +1,149 @@
+WEBVTT
+
+1
+00:00:00.600 --> 00:00:04.158
+Dairy is one of the most data-rich livestock sectors.
+
+2
+00:00:04.208 --> 00:00:07.832
+Herd records, milking systems, sensors, feed software.
+
+3
+00:00:07.882 --> 00:00:14.246
+Yet sustainability only improves when those data become decisions a farm can actually carry out.
+
+4
+00:00:14.646 --> 00:00:20.118
+This review argues that the path from data to decision is a pipeline with five layers:
+
+5
+00:00:20.168 --> 00:00:24.878
+data foundations, governance, analytics, decision engines, and deployment.
+
+6
+00:00:24.928 --> 00:00:27.353
+A weak layer anywhere breaks the chain.
+
+7
+00:00:29.003 --> 00:00:31.045
+Layer one is data foundations.
+
+8
+00:00:31.095 --> 00:00:36.847
+Integration usually fails not because data are missing, but because systems disagree:
+
+9
+00:00:36.897 --> 00:00:42.176
+on cow identifiers, on timestamps, on units, on how often things are recorded.
+
+10
+00:00:42.226 --> 00:00:50.137
+The fix is engineered ingestion, harmonization and quality control, delivering stable products such as cow-day tables.
+
+11
+00:00:50.537 --> 00:00:52.060
+Layer two is governance.
+
+12
+00:00:52.110 --> 00:00:57.028
+Who owns the data, who may use it, for what, and how consent can be withdrawn.
+
+13
+00:00:57.078 --> 00:01:01.367
+Without clear answers, farms stop sharing, and the pipeline dries up.
+
+14
+00:01:03.017 --> 00:01:04.700
+Layer three is analytics.
+
+15
+00:01:04.750 --> 00:01:07.967
+Machine learning turns raw streams into signals:
+
+16
+00:01:08.017 --> 00:01:10.633
+risk scores, phenotypes, anomaly flags.
+
+17
+00:01:10.683 --> 00:01:15.766
+One example predicted mastitis early, catching eighty-five percent of cases.
+
+18
+00:01:15.816 --> 00:01:22.231
+But such models struggle to transfer between herds, and a prediction alone is not yet a decision.
+
+19
+00:01:23.881 --> 00:01:27.007
+Layer four, decision engines, closes that gap.
+
+20
+00:01:27.057 --> 00:01:32.413
+Optimization asks what we should do, given explicit objectives and constraints.
+
+21
+00:01:32.463 --> 00:01:39.981
+In one study it cut feed cost by two dollars fifty-two per cow per day, or enteric methane by fifty-seven grams.
+
+22
+00:01:40.381 --> 00:01:45.785
+Simulation asks what will happen, carrying biology, time and uncertainty forward.
+
+23
+00:01:45.835 --> 00:01:53.301
+Calibrating lactation curves cut the error in simulated herd milk from forty point six percent, to two point two.
+
+24
+00:01:53.701 --> 00:01:56.189
+A digital twin goes one step further:
+
+25
+00:01:56.239 --> 00:02:04.873
+a farm model that is continuously updated from live data, recalibrated, and re-run for new what-if scenarios as conditions change.
+
+26
+00:02:06.523 --> 00:02:08.146
+Layer five is deployment.
+
+27
+00:02:08.196 --> 00:02:14.452
+Validate for the intended use, with forward-in-time tests, external herds and calibration checks.
+
+28
+00:02:14.502 --> 00:02:19.085
+Monitor for drift in the data, in the relationships, and in the labels.
+
+29
+00:02:19.135 --> 00:02:22.110
+And measure decision impact, not just accuracy.
+
+30
+00:02:24.210 --> 00:02:26.611
+The review ends with a staged roadmap.
+
+31
+00:02:26.661 --> 00:02:31.763
+In the first six months, define the decisions, and get data and governance ready.
+
+32
+00:02:31.813 --> 00:02:35.659
+By eighteen months, validate analytics inside real workflows.
+
+33
+00:02:35.709 --> 00:02:40.309
+By three years, couple them to decision engines and digital-twin practice.
+
+34
+00:02:40.709 --> 00:02:41.929
+The main gap today:
+
+35
+00:02:41.979 --> 00:02:48.211
+few studies connect prediction, a decision engine, and real deployment in one farm-facing workflow.
+
+36
+00:02:50.611 --> 00:02:51.364
+The takeaway:
+
+37
+00:02:51.414 --> 00:02:54.977
+value comes from the whole pipeline, not from any single model.

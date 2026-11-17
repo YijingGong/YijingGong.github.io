@@ -1,0 +1,157 @@
+WEBVTT
+
+1
+00:00:00.600 --> 00:00:04.273
+On a mixed crop and dairy farm, two plans depend on each other.
+
+2
+00:00:04.323 --> 00:00:07.995
+What to grow on each field, and what to feed each group of cows.
+
+3
+00:00:12.073 --> 00:00:16.978
+Europe's Common Agricultural Policy now adds rotation rules on the fields.
+
+4
+00:00:17.028 --> 00:00:21.009
+And climate policy wants less enteric methane from the cows.
+
+5
+00:00:21.059 --> 00:00:24.247
+Change the diet, and the crop plan has to follow.
+
+6
+00:00:24.647 --> 00:00:33.087
+This paper builds one optimization model that solves both plans together, and uses it to ask how a methane policy would actually play out.
+
+7
+00:00:34.737 --> 00:00:37.505
+The model is a mixed integer linear program.
+
+8
+00:00:37.555 --> 00:00:46.335
+Binary variables choose a crop for every field in every year, from thirty-three crops, with double cropping allowed, over a ten-year horizon.
+
+9
+00:00:46.735 --> 00:00:58.931
+Continuous variables set the ration for eleven animal groups, from home-grown crops and fifteen purchased feeds, while meeting requirements for intake, energy, protein, fiber, starch and fat.
+
+10
+00:00:59.331 --> 00:01:01.552
+Rotation rules become constraints.
+
+11
+00:01:01.602 --> 00:01:06.550
+The same annual species cannot follow itself without a winter or cover crop.
+
+12
+00:01:06.600 --> 00:01:11.287
+Alfalfa stays up to three and a half years, then takes a two-year break.
+
+13
+00:01:11.337 --> 00:01:13.299
+Permanent grassland stays put.
+
+14
+00:01:13.349 --> 00:01:17.713
+And enteric methane is a linear function of energy and fiber intake.
+
+15
+00:01:19.663 --> 00:01:21.851
+Step one is for the policymaker.
+
+16
+00:01:21.901 --> 00:01:29.717
+Weight income against methane, solve again and again, and you trace a Pareto front for each of three Italian farms:
+
+17
+00:01:29.767 --> 00:01:34.397
+a standard farm, a Grana Padano farm, and a Parmigiano Reggiano farm.
+
+18
+00:01:34.797 --> 00:01:37.712
+The trade-off is non-linear, and very uneven.
+
+19
+00:01:37.762 --> 00:01:45.190
+At maximum mitigation, the standard farm gives up fifty-eight percent of its income for a nine percent methane cut.
+
+20
+00:01:45.240 --> 00:01:52.411
+The Parmigiano farm, with its higher milk price, loses only about six percent of income for a seven percent cut.
+
+21
+00:01:54.061 --> 00:01:55.941
+Step two tests two policies.
+
+22
+00:01:55.991 --> 00:02:04.726
+A methane tax, even at one hundred seventy-six euros per ton of carbon dioxide equivalent, cuts emissions by less than one percent.
+
+23
+00:02:04.776 --> 00:02:12.912
+At five hundred seventy-five euros, the cut is still under five percent, and the standard farm's net income turns negative.
+
+24
+00:02:13.312 --> 00:02:14.780
+A hard cap works better.
+
+25
+00:02:14.830 --> 00:02:17.633
+Reductions of up to nine percent are feasible.
+
+26
+00:02:17.683 --> 00:02:19.879
+But the shadow price climbs steeply.
+
+27
+00:02:19.929 --> 00:02:28.622
+On the standard farm, it goes from four and a half euros per kilogram of methane at a one percent cut, to more than two hundred at nine percent.
+
+28
+00:02:30.272 --> 00:02:32.026
+What changes on the farm?
+
+29
+00:02:32.076 --> 00:02:33.275
+Diets get denser:
+
+30
+00:02:33.325 --> 00:02:35.842
+more protein and starch, less fiber.
+
+31
+00:02:35.892 --> 00:02:41.046
+Corn silage gives way to ryegrass silage, corn grain, sorghum and alfalfa.
+
+32
+00:02:41.096 --> 00:02:45.347
+Crop plans diversify, and farms buy more feed from the market.
+
+33
+00:02:47.847 --> 00:02:48.579
+The limits.
+
+34
+00:02:48.629 --> 00:02:53.073
+Only enteric methane is counted, not emissions from crops or manure.
+
+35
+00:02:53.123 --> 00:02:58.805
+Milk yield is held fixed, prices and yields are stable, and feed additives are left out.
+
+36
+00:03:01.205 --> 00:03:02.070
+The takeaway:
+
+37
+00:03:02.120 --> 00:03:04.094
+plan crops and diets together.
+
+38
+00:03:04.144 --> 00:03:07.621
+A cap cuts methane where a realistic tax barely does.
+
+39
+00:03:07.671 --> 00:03:10.691
+And the cost differs sharply from farm to farm.

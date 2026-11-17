@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:00.600 --> 00:00:05.558
+Whole-farm simulation models predict milk, feed intake, methane and manure.
+
+2
+00:00:05.608 --> 00:00:08.853
+And almost all of it hangs on one small equation:
+
+3
+00:00:08.903 --> 00:00:10.171
+the lactation curve.
+
+4
+00:00:10.571 --> 00:00:13.346
+The model here, RuFaS, uses Wood's curve.
+
+5
+00:00:13.396 --> 00:00:14.556
+Three parameters:
+
+6
+00:00:14.606 --> 00:00:18.927
+a sets the scale, b the rise to peak, and c the decline after it.
+
+7
+00:00:20.577 --> 00:00:32.089
+By default, the parameters come from national averages, built from more than eight million Holstein lactations, then adjusted for region, calving season, milking frequency and parity.
+
+8
+00:00:32.489 --> 00:00:37.470
+But two farms with identical metadata can produce very different amounts of milk.
+
+9
+00:00:37.520 --> 00:00:41.826
+Genetics, diets, reproduction and culling are invisible to that method.
+
+10
+00:00:43.476 --> 00:00:48.846
+This paper adds a calibration step that needs only three numbers a farm already knows:
+
+11
+00:00:48.896 --> 00:00:53.581
+annual herd milk production, the number of milking cows, and the parity mix.
+
+12
+00:00:54.281 --> 00:00:59.230
+First, turn annual herd milk into a three-hundred-and-five-day yield per cow.
+
+13
+00:00:59.280 --> 00:01:02.115
+Then split it by parity, using fixed ratios:
+
+14
+00:01:02.165 --> 00:01:08.204
+second parity makes eighteen percent more than first, third and later twenty-five percent more.
+
+15
+00:01:10.154 --> 00:01:13.676
+Second, for each parity, keep b and c, and search over a.
+
+16
+00:01:13.726 --> 00:01:21.560
+Step it by one hundredth, integrate the curve over three hundred and five days, and keep the value that best matches the target.
+
+17
+00:01:23.546 --> 00:01:28.463
+The test used ten commercial Holstein farms in New York, Texas and Wisconsin.
+
+18
+00:01:28.513 --> 00:01:36.297
+With the default method, simulated milk landed between eighty and a hundred and twenty percent of observed for most farms.
+
+19
+00:01:36.347 --> 00:01:41.074
+Two farms came out at one hundred sixty-seven, and two hundred six percent.
+
+20
+00:01:41.474 --> 00:01:45.859
+After calibration, every farm falls within four percent of observed.
+
+21
+00:01:45.909 --> 00:01:51.451
+Root mean square percentage error drops from forty point six percent, to two point two.
+
+22
+00:01:53.751 --> 00:01:55.448
+And it matters downstream.
+
+23
+00:01:55.498 --> 00:02:05.221
+Milk drives intake, enteric methane and manure, so the estimated greenhouse gas intensity shifts by sixteen percent on average between the two methods.
+
+24
+00:02:05.621 --> 00:02:06.391
+The caveats.
+
+25
+00:02:06.441 --> 00:02:10.176
+Only milk production could be checked against farm records.
+
+26
+00:02:10.226 --> 00:02:12.573
+The method is built on Holstein data.
+
+27
+00:02:12.623 --> 00:02:15.790
+And it calibrates the herd, not the individual cow.
+
+28
+00:02:18.190 --> 00:02:19.036
+The takeaway:
+
+29
+00:02:19.086 --> 00:02:25.180
+one number the farm already has, annual milk, makes the whole simulation far more farm-specific.

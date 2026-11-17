@@ -1,0 +1,125 @@
+WEBVTT
+
+1
+00:00:00.600 --> 00:00:07.327
+Nutritional grouping means feeding cows with similar requirements together, each group with its own ration.
+
+2
+00:00:07.377 --> 00:00:09.273
+It is known to save feed cost.
+
+3
+00:00:09.323 --> 00:00:11.281
+Can it also cut enteric methane?
+
+4
+00:00:14.120 --> 00:00:27.552
+To find out, this study builds an open-source linear program that formulates diets from the ten ingredients already on the farm, for six hundred seventy-five cows in the University of Wisconsin's Arlington herd.
+
+5
+00:00:27.952 --> 00:00:32.743
+It can minimize feed cost, minimize methane, or minimize both together.
+
+6
+00:00:32.793 --> 00:00:42.020
+Constraints hold intake and energy within one percent of target, and keep protein, fiber, starch, fat and silage within guideline ranges.
+
+7
+00:00:42.070 --> 00:00:43.902
+Milk yield is held constant.
+
+8
+00:00:45.552 --> 00:00:46.799
+Start with one group.
+
+9
+00:00:46.849 --> 00:00:53.993
+The farm's base diet costs seven dollars ninety-eight per cow per day, and emits four hundred eighty-six grams of methane.
+
+10
+00:00:54.393 --> 00:00:59.709
+Minimize cost, and the ration drops to five forty-six, thirty-two percent cheaper.
+
+11
+00:00:59.759 --> 00:01:03.070
+But methane rises to five hundred sixty-five grams.
+
+12
+00:01:03.120 --> 00:01:11.410
+Minimize methane instead, and it falls twelve percent, to four hundred twenty-nine grams, while cost climbs to eight seventy-two.
+
+13
+00:01:11.810 --> 00:01:14.174
+The dual objective lands in between:
+
+14
+00:01:14.224 --> 00:01:19.461
+nearly the same low cost, with methane fifty-five grams below the cost-only diet.
+
+15
+00:01:21.111 --> 00:01:26.001
+Now split the herd in two, by milk yield, days in milk, or energy requirement.
+
+16
+00:01:26.051 --> 00:01:28.189
+The targeted outcome barely moves.
+
+17
+00:01:28.239 --> 00:01:30.128
+What improves is the other one.
+
+18
+00:01:30.528 --> 00:01:34.978
+When minimizing cost, grouping trims methane by about thirty grams.
+
+19
+00:01:35.028 --> 00:01:40.538
+When minimizing methane, it saves thirty-six to seventy-four cents per cow per day.
+
+20
+00:01:40.588 --> 00:01:45.304
+Grouped by energy, the low-methane diet costs the same as the base diet.
+
+21
+00:01:45.704 --> 00:01:47.446
+Why so little on the target?
+
+22
+00:01:47.496 --> 00:01:52.697
+Fat and fiber, the nutrients that drive methane, had the same limits in every group.
+
+23
+00:01:52.747 --> 00:01:55.724
+So the single-group diet was already at the edge.
+
+24
+00:01:57.824 --> 00:02:00.775
+The rations themselves change only modestly.
+
+25
+00:02:00.825 --> 00:02:04.777
+Cheaper diets lean on soybean hulls and high-moisture corn.
+
+26
+00:02:04.827 --> 00:02:13.048
+Low-methane diets swap in dry corn and whole cottonseed, for more starch and fat, and crude protein rises to twenty percent.
+
+27
+00:02:15.648 --> 00:02:16.197
+Caveats:
+
+28
+00:02:16.247 --> 00:02:22.788
+milk is assumed not to respond, protein is a simple proxy, and it is one herd with ten ingredients.
+
+29
+00:02:25.188 --> 00:02:25.990
+The takeaway:
+
+30
+00:02:26.040 --> 00:02:27.633
+optimize the ration first.
+
+31
+00:02:27.683 --> 00:02:32.199
+Grouping then refines it, and mostly helps the goal you were not aiming at.
