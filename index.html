@@ -1436,5 +1436,17 @@
 vs.forEach(function(v){v.addEventListener('play',function(){vs.forEach(function(o){if(o!==v)o.pause();});});
 var d=v.closest('details');if(d)d.addEventListener('toggle',function(){if(!d.open)v.pause();});});})();
 </script>
+<!-- Private visitor statistics (GoatCounter, no cookies). Stats are visible only at https://yijinggong.goatcounter.com after login.
+     Each tab of the site (#farm, #papers, ...) is counted as its own page so you can see which sections people open. -->
+<script>
+window.goatcounter={no_onload:true};
+function gcSend(){
+  if(!window.goatcounter||!window.goatcounter.count)return;
+  var h=(location.hash||'').replace('#','')||'farm';
+  window.goatcounter.count({path:'/#'+h, title:document.title});
+}
+window.addEventListener('hashchange',gcSend);
+</script>
+<script data-goatcounter="https://yijinggong.goatcounter.com/count" async src="//gc.zgo.at/count.js" onload="gcSend()"></script>
 </body>
 </html>
