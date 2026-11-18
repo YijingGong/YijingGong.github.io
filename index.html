@@ -1440,7 +1440,28 @@ var d=v.closest('details');if(d)d.addEventListener('toggle',function(){if(!d.ope
      Each tab of the site (#farm, #papers, ...) is counted as its own page so you can see which sections people open. -->
 <script>
 window.goatcounter={no_onload:true};
+/* Owner switch (not linked anywhere): open the site with #stats-off to stop counting your own visits in this browser,
+   #stats-on to count again, #stats-status to check. A small notice confirms the current state. */
+function gcSkip(){ try{ return localStorage.getItem('skipgc')==='t'; }catch(e){ return false; } }
+function gcNotice(msg){
+  var d=document.createElement('div'); d.textContent=msg;
+  d.style.cssText='position:fixed;left:50%;top:16px;transform:translateX(-50%);z-index:99999;background:#1f3d2b;color:#fff;padding:12px 18px;border-radius:10px;font:15px/1.4 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)';
+  document.body.appendChild(d); setTimeout(function(){ d.remove(); }, 6000);
+}
+function gcSwitch(){
+  var h=(location.hash||'').replace('#','');
+  if(h!=='stats-off' && h!=='stats-on' && h!=='stats-status' && h!=='toggle-goatcounter') return false;
+  try{
+    if(h==='stats-off') localStorage.setItem('skipgc','t');
+    if(h==='stats-on') localStorage.removeItem('skipgc');
+  }catch(e){}
+  gcNotice(gcSkip() ? 'Visitor counting is OFF in this browser. Your visits here will not be counted.'
+                    : 'Visitor counting is ON in this browser. Your visits here will be counted.');
+  return true;
+}
 function gcSend(){
+  if(gcSwitch()) return;
+  if(gcSkip()) return;
   if(!window.goatcounter||!window.goatcounter.count)return;
   var h=(location.hash||'').replace('#','')||'farm';
   window.goatcounter.count({path:'/#'+h, title:document.title});
